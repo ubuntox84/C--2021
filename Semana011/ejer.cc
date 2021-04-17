@@ -7,9 +7,11 @@ class impresion{
     virtual void imprimir()=0;
 };
 class printA4:public impresion{
+    public:
     void imprimir()=0;
 };
 class printA3:public impresion{
+    public:
     void imprimir()=0;
 };
 class papelA4:public printA4{
@@ -20,7 +22,7 @@ class papelA4:public printA4{
 };
 
 int main(){
-    papelA4 p;
-    p.A4();
+    // papelA4 *p=new papelA4();
+    // p.A4();
     return 0;
 }
